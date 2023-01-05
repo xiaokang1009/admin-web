@@ -1,0 +1,64 @@
+.userLayout
+    width: 100vw
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+.login_container
+    width: calc(100vw - 6vw)
+    height: calc(100vh - 6vh)
+    background-color: #eff5ff
+    border-radius: 34px
+    position: relative
+    overflow: hidden
+    display: flex
+    justify-content: center
+    align-content: center
+    align-items: center
+    &::after
+        content: ''
+        position: absolute
+        width: 1279px
+        height: 594px
+        left: 0
+        top: 0
+        pointer-events: none
+        background-image: url(/assets/images/login/user_icon1.png)
+        background-size: 100% 100%
+
+    .login_left
+        i
+            display: block
+            width: 474px
+            height: 487px
+            background-size: 100% 100%
+            background-image: url(/assets/images/login/login_banner.png)
+
+    .login_form
+        width: 456px
+        height: 447px
+        border-radius: 13px
+        background: #ffffff
+        box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.1)
+        margin-left: 132px
+        overflow: hidden
+        padding: 40px
+    .login_tips
+        width: 100%
+        text-align: center
+        line-height: 55px
+        font-size: 35px
+        color: #448bff
+        margin-bottom: 32px
+    .captcha
+        display: flex
+        justify-content: flex-end
+    .captcha_input
+        height: 40px
+        line-height: 40px
+        border-radius: 32px
+    .login_btn
+        width: 100%
+        border-radius: 33px
+        height: 40px
+        margin-top: 36px
