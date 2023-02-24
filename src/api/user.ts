@@ -7,7 +7,7 @@ import service from '@/utils/request'
 
 export const login = data => {
   return service({
-    url: '/user/login',
+    url: '/admin/login',
     method: 'post',
     data
   })
@@ -19,7 +19,14 @@ export const login = data => {
  */
 export const getUserInfo = () => {
   return service({
-    url: '/user/getUserInfo',
+    url: '/admin/sys/user/info',
+    method: 'get'
+  })
+}
+
+export const getCaptcha = () => {
+  return service({
+    url: '/admin/captcha/img',
     method: 'get'
   })
 }
